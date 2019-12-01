@@ -43,6 +43,14 @@ export class HeroService {
     );
   }
 
+  deleteHero(hero: Hero) {
+    const url = `${this.heroesUrl}/${hero.id}`;
+    return this.http.delete<Hero>(url, this.httpOptions).pipe(
+      tap(_ => this.log(`deleted hero with id ${hero.id}`)),
+      catchError(this.handleError<Hero>('deleteHero'))
+    );
+  }
+
   updateHero(hero: Hero) {
     return this.http.put(this.heroesUrl, hero, this.httpOptions).pipe(
       tap(_ => this.log(`updated hero id=${hero.id}`)),
