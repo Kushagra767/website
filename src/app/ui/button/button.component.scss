@@ -1,0 +1,21 @@
+.btn {
+  width: 7vw;
+  padding: .8rem 1rem;
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fff;
+  background-color: #039be5;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+
+  &--white {
+    color: #039be5;
+    border: 1px solid #039be5;
+    background-color: #fff;
+  }
+}

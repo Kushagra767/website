@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem 2.5rem;
+  background-color: #eee;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+
+  &__primary-text {
+    display: block;
+    text-align: center;
+    color: #334953;
+    margin: 0 1rem;
+  }
+
+  &__name-text {
+    display: block;
+    margin: 4px 0;
+    color: #039be5;
+    font-weight: 400;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 50vh;
+  }
+
+  &__hero-id {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+  }
+
+  &__hero-name-input {
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}

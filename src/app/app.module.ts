@@ -12,6 +12,8 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { httpInterceptorProviders } from './http-interceptors';
+import { UIModule } from './ui/ui.module';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { httpInterceptorProviders } from './http-interceptors';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
+    HeroSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { httpInterceptorProviders } from './http-interceptors';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
+    UIModule,
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent],
