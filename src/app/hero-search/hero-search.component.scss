@@ -41,15 +41,3 @@ ul.search-result {
   margin-top: 0;
   padding-left: 0;
 }
-
-#search-component {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.search-result {
-  position: absolute;
-  margin-top: 30px;
-  z-index: 1;
-}

@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { httpInterceptorProviders } from './http-interceptors';
 import { UIModule } from './ui/ui.module';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,10 +7,6 @@
   box-sizing: inherit;
 }
 
-.container {
-  padding: 20px;
-}
-
 h1 {
   font-size: 1.2em;
   margin-bottom: 0;
@@ -22,32 +18,35 @@ h2 {
   padding-top: 0;
 }
 
-nav {
+.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #eee;
-}
+  padding: 0 1rem;
+  background-color: transparent;
 
-nav a {
-  padding: 8px 10px;
-  text-decoration: none;
-  margin: 12px 10px;
-  display: inline-block;
-  background-color: #eee;
-  border: 2px solid #fff;
-  border-radius: 4px;
-}
+  &__link:link,
+  &__link:visited {
+    color: #334953;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 4px;
+  }
 
-nav a:visited,
-a:link {
-  color: #334953;
-}
+  &__link:hover {
+    color: #039be5;
+  }
 
-nav a:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
-}
+  &__menu {
+    display: flex;
+    align-content: center;
+  }
 
-nav a.active {
-  color: #039be5;
+  &__menu * {
+    padding: .7rem;
+    margin: 1rem .5rem;
+  }
+
+  &__search-box {}
 }
