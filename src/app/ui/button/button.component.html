@@ -1,6 +1,13 @@
 <a *ngIf="url; else button" class="btn"><ng-content></ng-content> </a>
 <ng-template #button>
-  <button class="btn" [ngClass]="{ btn: true, 'btn--white': color == 'white' }">
+  <button
+    class="btn"
+    [ngClass]="{
+      btn: true,
+      'btn--white': color == 'white',
+      'btn--orange': color == 'orange'
+    }"
+  >
     <ng-content></ng-content>
   </button>
 </ng-template>

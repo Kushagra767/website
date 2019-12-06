@@ -1,4 +1,43 @@
-.header {
+.container {
   height: 85vh;
-  background: url(../../assets/img/header.jpg) no-repeat center center/cover;
+  width: 100vw;
+  //background-image: linear-gradient(to left bottom, rgba(225, 97, 241, 0.8), rgb(247, 181, 40, .8));
+  background: url(../../assets/img/header.svg) no-repeat center center/cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__logo {
+    width: 5rem;
+  }
+
+  &__text-box {
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &__logo {
+    height: 15rem;
+    width: 10rem;
+  }
+}
+
+.heading-primary {
+  &--main {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  &--sub {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
 }
